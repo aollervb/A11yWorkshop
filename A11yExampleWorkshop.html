@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- Missing lang attribute -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Missing descriptive title -->
+    <title>Book</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+         }
+ 
+         body {
+             font-family: -apple-system, system-ui, sans-serif;
+             width: 100%;
+             max-width: 430px;
+             margin: 0 auto;
+             font-size: 14px;
+             line-height: 1.3;
+         }
+ 
+         /* Header */
+         .header {
+             background-color: #232f3e;
+             padding: 8px;
+         }
+ 
+         .nav-buttons {
+             display: flex;
+             gap: 8px;
+             justify-content: center;
+         }
+ 
+         .nav-button {
+             color: white;
+             background: none;
+             border: 1px solid white;
+             padding: 6px 12px;
+             border-radius: 4px;
+             font-size: 13px;
+         }
+ 
+         /* Product Image */
+         .product-image {
+             width: 100%;
+             height: auto;
+             max-height: 300px;
+             object-fit: contain;
+         }
+ 
+         /* Product Info */
+         .product-title {
+             padding: 12px;
+             background: white;
+         }
+ 
+         h1 {
+             font-size: 18px;
+             margin-bottom: 6px;
+         }
+ 
+         .rating {
+             color: #F90;
+             font-size: 14px;
+         }
+ 
+         /* Price Section */
+         .price-box {
+             padding: 12px;
+             background: white;
+             margin-top: 1px;
+         }
+ 
+         .price {
+             font-size: 20px;
+             color: #B12704;
+             margin-bottom: 12px;
+         }
+ 
+         /* Form */
+         label {
+             display: block;
+             font-size: 13px;
+             margin-bottom: 6px;
+             color: #565959;
+         }
+ 
+         .format-select {
+             width: 100%;
+             padding: 8px;
+             margin-bottom: 12px;
+             border: 1px solid #D5D9D9;
+             border-radius: 8px;
+             font-size: 14px;
+         }
+ 
+         .add-to-cart-button {
+             width: 100%;
+             padding: 12px;
+             background: #FFD814;
+             border: none;
+             border-radius: 20px;
+             font-size: 15px;
+         }
+ 
+         /* Success Message */
+         .success-message {
+             margin: 8px;
+             padding: 8px;
+             background: #e8f5e9;
+             color: #2e7d32;
+             border-radius: 4px;
+             font-size: 13px;
+             display: none;
+         }
+ 
+         /* Details Sections */
+         .product-details,
+         .author-section {
+             padding: 12px;
+             background: white;
+             margin-top: 8px;
+             font-size: 13px;
+         }
+ 
+         h2 {
+             font-size: 16px;
+             margin-bottom: 8px;
+         }
+ 
+         /* Table */
+         .specs-table {
+             width: 100%;
+             font-size: 13px;
+         }
+ 
+         .specs-table th,
+         .specs-table td {
+             padding: 6px 4px;
+             border-bottom: 1px solid #E7E7E7;
+         }
+ 
+         .specs-table th {
+             width: 40%;
+             color: #565959;
+             font-weight: normal;
+             text-align: left;
+         }
+     </style>
+</head>
+<body>
+    <!-- Missing ARIA landmarks/roles -->
+    <header class="header">
+        <nav>
+            <!-- Buttons without aria-labels -->
+            <div class="nav-buttons">
+                <button class="nav-button">←</button>
+                <button class="nav-button">→</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-info">
+                <!-- Missing proper heading hierarchy - starts with h3 -->
+                <div class="product-title">
+                    <h3>The Stormlight Archives: The Way of Kings</h3>
+                    <!-- Rating not properly labeled for screen readers -->
+                    <div class="rating">
+                        ***** (5/5)
+                    </div>
+                </div>
+                <!-- Missing alt text -->
+                <img src="https://placehold.in/430x600@2x.png/dark" class="product-image">
+
+                <div class="price-box">
+                    <!-- Price not properly labeled -->
+                    <div class="price">35.99</div>
+
+                    <!-- Form without labels -->
+                    <form>
+                        Select Format:
+                        <select class="format-select">
+                            <option>Hardcover</option>
+                            <option>Paperback</option>
+                            <option>Kindle Edition</option>
+                            <option>Audiobook</option>
+                        </select>
+
+                        <!-- Generic button text -->
+                        <button type="submit" class="add-to-cart-button">
+                            Click Here
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Missing role="alert" and aria-live -->
+                <div class="success-message">
+                    Added!
+                </div>
+            </div>
+        </div>
+
+        <!-- Missing semantic structure -->
+        <div class="product-details">
+            <!-- Missing heading -->
+            <p>From #1 New York Times bestselling author Brandon Sanderson, The Way of Kings, Book One of the Stormlight Archive begins an epic fantasy masterpiece, introducing readers to the richly imagined world of Roshar, a world of stone and storms.</p>
+
+            <!-- Table without headers -->
+            <table class="specs-table">
+                <tr>
+                    <td>Publisher</td>
+                    <td>Tor Books</td>
+                </tr>
+                <tr>
+                    <td>Publication Date</td>
+                    <td>August 31, 2010</td>
+                </tr>
+                <tr>
+                    <td>Pages</td>
+                    <td>1007</td>
+                </tr>
+                <tr>
+                    <td>ISBN</td>
+                    <td>978-0765326355</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Generic link text -->
+        <a href="#">Read more...</a>
+
+        <div class="author-section">
+            <!-- Click here link -->
+            <a href="#">Click here to learn more about the author</a>
+        </div>
+    </main>
+
+    <!-- JavaScript with no consideration for keyboard users -->
+    <script>
+        document.querySelector('.add-to-cart-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            const successMessage = document.querySelector('.success-message');
+            successMessage.style.display = 'block';
+            // No announcement for screen readers
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

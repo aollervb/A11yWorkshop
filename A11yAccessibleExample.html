@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Way of Kings - The Stormlight Archive Book 1 - BookStore</title>
+    <!-- Previous HTML remains the same, replace only the <style> section -->
+    <style>
+       /* Reset and Base Styles */
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, system-ui, sans-serif;
+            width: 100%;
+            max-width: 430px;
+            margin: 0 auto;
+            font-size: 14px;
+            line-height: 1.3;
+        }
+
+        /* Header */
+        .header {
+            background-color: #232f3e;
+            padding: 8px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .nav-button {
+            color: white;
+            background: none;
+            border: 1px solid white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        /* Product Image */
+        .product-image {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: contain;
+        }
+
+        /* Product Info */
+        .product-title {
+            padding: 12px;
+            background: white;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .rating {
+            color: #F90;
+            font-size: 14px;
+        }
+
+        /* Price Section */
+        .price-box {
+            padding: 12px;
+            background: white;
+            margin-top: 1px;
+        }
+
+        .price {
+            font-size: 20px;
+            color: #B12704;
+            margin-bottom: 12px;
+        }
+
+        /* Form */
+        label {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 6px;
+            color: #565959;
+        }
+
+        .format-select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #D5D9D9;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .add-to-cart-button {
+            width: 100%;
+            padding: 12px;
+            background: #FFD814;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+        }
+
+        /* Success Message */
+        .success-message {
+            margin: 8px;
+            padding: 8px;
+            background: #e8f5e9;
+            color: #2e7d32;
+            border-radius: 4px;
+            font-size: 13px;
+            display: none;
+        }
+
+        /* Details Sections */
+        .product-details,
+        .author-section {
+            padding: 12px;
+            background: white;
+            margin-top: 8px;
+            font-size: 13px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        /* Table */
+        .specs-table {
+            width: 100%;
+            font-size: 13px;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 6px 4px;
+            border-bottom: 1px solid #E7E7E7;
+        }
+
+        .specs-table th {
+            width: 40%;
+            color: #565959;
+            font-weight: normal;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="nav-buttons">
+                <button class="nav-button" aria-label="Previous page">Previous</button>
+                <button class="nav-button" aria-label="Next page">Next</button>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div class="product-container">
+            <div class="product-info">
+                <div class="product-title">
+                    <h1>The Stormlight Archives: The Way of Kings</h1>
+                    <div class="rating" aria-label="4.5 out of 5 stars">
+                        ★★★★★ <span>(5/5)</span>
+                    </div>
+                </div>
+                <img src="https://placehold.in/430x600@2x.png/dark" 
+                 alt="Book cover of The Stormlight Archives: The Way of Kings showing a character with a flag standing on barren land" 
+                 class="product-image">
+                <div class="price-box">
+                    <p class="price" aria-label="Price">$35.99</p>
+                    <form aria-label="Purchase options">
+                        <label for="format">Select Format:</label>
+                        <select id="format" name="format" class="format-select">
+                            <option value="hardcover">Hardcover</option>
+                            <option value="paperback">Paperback</option>
+                            <option value="kindle">Kindle Edition</option>
+                            <option value="audio">Audiobook</option>
+                        </select>
+
+                        <button type="submit" 
+                                class="add-to-cart-button" 
+                                aria-label="Add to cart">
+                            Add to Cart
+                        </button>
+                    </form>
+                </div>
+
+                <div class="success-message" 
+                     role="alert" 
+                     aria-live="polite">
+                    Item added to cart!
+                </div>
+            </div>
+        </div>
+
+        <section class="product-details" aria-label="Product details">
+            <h2>About the Book</h2>
+            <p>From #1 New York Times bestselling author Brandon Sanderson, The Way of Kings, Book One of the Stormlight Archive begins an epic fantasy masterpiece, introducing readers to the richly imagined world of Roshar, a world of stone and storms.</p>
+
+            <table class="specs-table" aria-label="Book specifications">
+                <tbody>
+                    <tr>
+                        <th scope="row">Publisher</th>
+                        <td>Tor Books</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Publication Date</th>
+                        <td>August 31, 2010</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pages</th>
+                        <td>1007</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ISBN</th>
+                        <td>978-0765326355</td>
+                    </tr>
+                </tbody>
+            </table>            
+        </section>
+
+        <section class="author-section" aria-label="Author information">
+            <h2>Author Biography</h2>
+            <p>Brandon Sanderson is an American author of epic fantasy and science fiction. He is best known for the Cosmere universe, in which most of his fantasy novels are set. He is also known for finishing Robert Jordan's epic fantasy series The Wheel of Time.</p>
+        </section>        
+    </main>
+
+    <script>
+        // Simple JavaScript to show success message
+        document.querySelector('.add-to-cart-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            const successMessage = document.querySelector('.success-message');
+            successMessage.style.display = 'block';
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

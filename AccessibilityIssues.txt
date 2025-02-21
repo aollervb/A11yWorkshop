@@ -1,0 +1,17 @@
+Accessibility issues with the non accessible layout:
+
+Missing lang attribute
+Missing proper ARIA landmarks/roles
+Missing alt text on image
+Missing form labels
+Improper heading hierarchy
+Generic button/link text
+Missing table headers
+No semantic structure
+Missing ARIA labels
+No screen reader announcements for dynamic content
+Missing proper role attributes
+Generic "click here" links
+No keyboard accessibility consideration
+Poor success message implementation
+Missing descriptive page title
