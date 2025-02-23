@@ -1,5 +1,19 @@
 # Mobile Screen Readers Workshop - Speaker Notes
 
+## Introduction (3 mins)
+- Quick overview of mobile accessibility importance
+    1. Screen readers are necessary for blind people, important for partially-sighted users and helpful for people with reading disorders.
+    2. It is hard to teach about web accessibility without talking about screen readers. Screen readers has become for web accessibility what wheel chairs is for accessibility. Even though it is a myth that accessibility is just for blind or partially-sighted users, screen reader support is a mandatory topic.
+- What we'll cover today
+- Goal: Understand screen readers and common issues
+
+## Screen Readers Quick Guide (5 mins)
+- Quick demo of three main readers:
+  * iOS VoiceOver: Triple-click side button
+  * Android TalkBack: Quick Settings or volume keys
+  * Fire VoiceView: Press power until tone + 2 fingers
+- Basic gesture: Swipe to navigate, double tap to select
+
 ## Key WCAG/CCR Rules (5 minutes)
 
 ### 1. Alt Text (WCAG 1.1.1) - 1.5 mins
@@ -86,5 +100,3 @@ Key Points:
 - WCAG Guidelines: https://www.w3.org/WAI/WCAG21/quickref/
 - Test Pages: https://aollervb.github.io/A11yWorkshop/
 ```
-
-Save this as `screen-reader-workshop-notes.md` for quick reference during your presentation.
