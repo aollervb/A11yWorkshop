@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Reader Challenge - Web Accessibility Workshop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, system-ui, sans-serif;
+            line-height: 1.5;
+            max-width: 430px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            color: #232f3e;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .intro {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .button {
+            display: block;
+            padding: 16px;
+            background: #232f3e;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .button.accessible {
+            background: #2e7d32;
+        }
+
+        .button.inaccessible {
+            background: #c62828;
+        }
+
+        .note {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Screen Reader Challenge</h1>
+    
+    <div class="intro">
+        <p>Welcome to the A11y Accessibility Workshop! Choose a version of the bookstore to explore with your screen reader:</p>
+    </div>
+
+    <div class="buttons">
+        <a href="https://aollervb.github.io/A11yWorkshop/A11yAccessibleExample.html#" class="button accessible">
+            Accessible Version
+        </a>
+        
+        <a href="https://aollervb.github.io/A11yWorkshop/A11yExampleWorkshop.html?#" class="button inaccessible">
+            Game Version
+        </a>
+    </div>
+
+    <p class="note">Try navigating each version with your preferred screen reader to experience the differences in accessibility.</p>
+</body>
+</html>
