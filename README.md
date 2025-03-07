@@ -205,10 +205,3 @@ function handleSubmit(e) {
    - [ ] Correct structure
    - [ ] Appropriate scoping
 ```
-
-Save this content in a file named `accessibility-issues.md`. This document:
-- Lists all issues
-- Provides code examples
-- Includes WCAG references
-- Adds testing checklist
-- Shows before/after fixes
